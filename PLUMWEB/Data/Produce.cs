@@ -1,4 +1,6 @@
-﻿namespace PLUMWEB.Data
+﻿using PLUMWEB.Data.Models;
+
+namespace PLUMWEB.Data
 {
     public class Produce
     {

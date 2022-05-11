@@ -1,6 +1,11 @@
 using Microsoft.AspNetCore.Identity;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using PLUMWEB.Data;
+using PLUMWEB.Configurations;
+using PLUMWEB.Contracts;
+using PLUMWEB.Models.Repositories;
+using PLUMWEB.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +17,11 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<Admin>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddScoped<IProduceRepository, ProduceRepository>();
+
+builder.Services.AddAutoMapper(typeof(MapperConfig));
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

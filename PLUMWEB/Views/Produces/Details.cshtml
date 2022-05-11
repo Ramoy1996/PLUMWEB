@@ -1,0 +1,49 @@
+﻿@using PLUMWEB.Data.Models
+@model ProduceVM
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>PRODUCE DETAILS</h1>
+
+<div>
+    
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-8">
+            @Html.DisplayNameFor(model => model.NameOfProduce)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.NameOfProduce)
+        </dd>
+        <dt class = "col-sm-8">
+            @Html.DisplayNameFor(model => model.TypeOfProduce)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.TypeOfProduce)
+        </dd>
+        <dt class = "col-sm-8">
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+        <dt class = "col-sm-8">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class = "col-sm-8">
+            @Html.DisplayNameFor(model => model.DateAdded)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.DateAdded)
+        </dd>
+    </dl>
+</div>
+<br/>
+<div>
+    <a asp-action="Index" class="btn btn-primary"><i class="fa-solid fa-angle-left"></i>Back to List</a> &nbsp;
+    <a asp-action="Edit" class="btn btn-success" asp-route-id="@Model?.Id">Edit<i class="fa-solid fa-plus"></i></a> 
+</div>

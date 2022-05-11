@@ -1,0 +1,54 @@
+﻿@using PLUMWEB.Data.Models
+@model ProduceVM
+
+@{
+    ViewData["Title"] = "Edit Produce";
+}
+
+<h1>EDIT PRODUCE</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-8">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="NameOfProduce" class="control-label"></label>
+                <input asp-for="NameOfProduce" class="form-control" />
+                <span asp-validation-for="NameOfProduce" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeOfProduce" class="control-label"></label>
+                <input asp-for="TypeOfProduce" class="form-control" />
+                <span asp-validation-for="TypeOfProduce" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantity" class="control-label"></label>
+                <input asp-for="Quantity" class="form-control" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateAdded" class="control-label"></label>
+                <input asp-for="DateAdded" class="form-control" />
+                <span asp-validation-for="DateAdded" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Id" />
+            <br/>
+            <div class="form-group">
+               <a asp-action="Index" class="btn btn-primary"><i class="fa-solid fa-angle-left"></i>Back to List</a>&nbsp;
+            <input type="submit" value="Save Changes" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+  
+</div>
+
