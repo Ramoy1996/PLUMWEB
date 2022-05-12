@@ -1,0 +1,59 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	background-image: url(images/books1.jpg);
+	
+}
+header{
+	
+}
+.navbar {
+	background-color:#1E90FF;
+	color:fff;
+}
+.navbar ul{
+	float: right;
+}
+.navbar ul li a{
+    padding: 22px 14px;
+    background: #1E90FF;
+	color: #fff;
+}
+.container {
+	position: absolute;
+	width: 80%;
+	height: 155%;
+	left: 10%;
+    border: 2px solid #fff;
+	border-radius: 5px 5px 5px 5px;
+	text-decoration: none;
+	font-size: 14px;
+	font-style: poppins;
+	margin-top: 20%;
+	background-color: #fff;
+}
+
+
+.history-text {
+	position: absolute;
+	margin: 10%;
+}
+.history-text h1{
+	position: relative;
+	font-family: poppins;
+	color: #1E90FF;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 60px;
+	margin: 5%;
+}
+.history-text p{
+	letter-spacing: 1px;
+	font-size: 20px;
+	color: #fff;
+	text-align: justify;
+}
+
