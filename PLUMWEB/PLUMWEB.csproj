@@ -8,12 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\css\style2.css" />
     <Content Remove="wwwroot\images\style2.css" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\css\style2.css" />
     <None Include="wwwroot\images\images1.jpg" />
   </ItemGroup>
 
